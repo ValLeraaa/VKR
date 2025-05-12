@@ -1,0 +1,257 @@
+input [type="submit"]:hover {
+    box-shadow: none;
+    background-color: aqua;
+}
+
+input [type="reset"]:hover {
+    box-shadow: none;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.com {
+    text-align: justify; 
+    line-height: 1.6; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+}
+
+
+.action-buttons {
+    display: flex;         
+    align-items: center;    
+}
+
+.social-buttons {
+    margin-right: 10px;     
+}
+
+.social-buttons a {
+    color: white;
+    margin-left: 5px;   
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.call-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: justify; 
+    line-height: 1.6; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.r {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px; 
+    font-family: Arial, sans-serif;
+    color: #333; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.carousel-container {
+    position: relative;
+    width: 600px; 
+    height: 400px; 
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+footer {
+    background-color: black;
+    color: gray;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .price-list {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.price-list thead th {
+    background-color: blue;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-list tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    vertical-align: top; 
+}
+
+.price-list tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.price-list tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.price-list tbody tr:hover {
+  background-color: #e0f2f1; 
+}
+
+.price-list {
+    border: 0;
+}
+
+.price-list thead {
+    display: none;
+}
+
+.price-list tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd; 
+}
+
+.price-list td {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    border-bottom: 1px dotted #ccc; 
+    position: relative;
+    padding-left: 50%; 
+}
+
+.price-list td:before {
+    content: attr(data-label); 
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.record-button {
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #007bff; 
+    color: white;
+    padding: 12px 24px; 
+    text-align: center;
+    text-decoration: none;
+    border: none;   
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 200px;
+    font-size: 16px;  
+    cursor: pointer;     
+    transition: background-color 0.3s ease;
+}
+
+.record-button:hover {
+    background-color: #0056b3;
+}
